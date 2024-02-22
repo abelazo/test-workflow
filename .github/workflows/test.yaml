@@ -4,11 +4,9 @@ on:
   workflow_call:
     inputs:
       logLevel:
-        required: true
         type: string
         default: 'warning'
 
-        # required: true
         # type: choice
         # default: 'warning'
         # options:
