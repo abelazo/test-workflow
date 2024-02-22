@@ -4,15 +4,16 @@ on:
   workflow_call:
     inputs:
       logLevel:
-        type: string
+        type: choice
         default: 'warning'
+        options:
+          - info
+          - warning
+          - debug
 
-        # type: choice
+        # type: string
         # default: 'warning'
-        # options:
-        #   - info
-        #   - warning
-        #   - debug
+
 
 jobs:
   task:
