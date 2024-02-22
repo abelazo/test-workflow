@@ -4,14 +4,17 @@ on:
   workflow_call:
     inputs:
       logLevel:
-        description: 'Log level'
         required: true
+        type: string
         default: 'warning'
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
+
+        # required: true
+        # type: choice
+        # default: 'warning'
+        # options:
+        #   - info
+        #   - warning
+        #   - debug
 
 jobs:
   task:
